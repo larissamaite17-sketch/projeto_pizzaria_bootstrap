@@ -141,5 +141,91 @@
      </section>
      
     
+     <!-- PIZZAS
+      id="pizzas": permite acessar esta seção utilizando href="#pizzas"
+      py-5: adiciona padding em cima e embaixo
+      -->
+
+    <section id="pizzas" class="py-5">
+        <div class="container">         
+            <!--text-center:centraliza o texto
+            fw-bold: deixa o texto em negrito
+            mb-4: add margem inferior
+            m: margin
+            b: bottom
+            4: tamanho de espaçamento
+            -->
+            <h2 class="text-center fw-bold mb-4">
+                Nossas Pizzas
+            </h2>
+
+            <!--row: cria uma linha do Grid
+            g-4: define um espaçamento entre as colunas e linhas
+            g: significa gap/gutter
+            -->
+
+            <div class="row g-4">
+
+                <!--Pizza 1-->
+                <!-- col-md-4: ocupa 4 das 12 colunas do Grid
+                 Como temos três elementos:
+                 4 + 4 + 4 = 12
+                 Portanto, sem telas md ou maiores teremos três cards lado a lado
+                 Em tela menores, eles ficarão um abaixo do outro
+                 -->
+                 <div class="col-md-4">                                
+                    <!-- card: cria um card do Bootstrao
+                    h-100: faz o card ocupar 100% da altura disponível. Ajuda a deixar todos os cards com a mesma altura.
+                    shadow-sm: add uma sombra pequena sm significa small 
+                    -->
+                    <div class="card h-100 shadow-sm">
+                        <!--card-img-top: estiliza a img para aparecer na parte superior do card
+                        -->
+                        <img src="img/pizza2.1.jpg" class="card-img-top" alt="Pizza"/>
+
+                        <!--card-body: cria a área principal do conteúdo do card,
+                        aplicando espaçamento automático
+                        -->
+                        <div class="card-body">
+                            <!--card-title: estiliza o título do card-->
+                            <h5 class="card-title">Calabresa</h5>
+                            <!--card-text: estiliza o texto do contéudo do card-->
+                            <p class="card-text">
+                                Molho de tomate, mussarela, calabresa e orégano.
+                            </p>
+
+                            <p class="fw-bold text-danger fs-5">
+                                R$ 45,00
+                            </p>
+
+                            <!-- btn: transforma o link visualmente em botão
+                             btn-danger: aplica a cor vermelha ao botão-->
+                             <a href="#" class="btn btn-danger">
+                                Pedir agora
+                             </a>
+                        </div>
+                    </div>
+                 </div>
+
+                 <!--Pizza 2-->
+                 <div class="col-md-4">         
+                    <div class="card h-100 shadow-sm">
+                        <img src="img/pizza3.jpg" class="card-img-top" alt="pizza" />
+                        <div class="card-body">
+                            <h5 class="card-title">Frango com Catupiry</h5>
+                            <p class="card-text">
+                                Molho de tomate, frango desfiado, cebola, catupiry e orégano
+                            </p>
+                            <p class="fw-bold text-danger fs-5"> R$ 50,00 </p>
+                            <a href="#" class="btn btn-danger">
+                                Pedir agora
+                             </a>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+        </div>
+    </section>
 </body>
 </html>
